@@ -32,6 +32,9 @@ function Register() {
         if (error.code === "auth/invalid-email") {
           alert("Gunakan email yang valid!");
         }
+        if (error.code === "auth/weak-password") {
+          alert("Password harus lebih dari 6 karakter!");
+        }
       }
     }
   }
